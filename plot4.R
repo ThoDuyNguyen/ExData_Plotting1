@@ -18,6 +18,5 @@ plot(Sub_metering_1~DateTime, data = subsetted, type="l", xlab="", col="black",
 lines(Sub_metering_2~DateTime, data = subsetted, type="l", col="red")
 lines(Sub_metering_3~DateTime, data = subsetted, type="l", col="blue")
 legend("topright",legend=c("Sub_metering_1","Sub_metering_2","Sub_metering_3"), lty=c(1,1), col=c("black","red","blue"),cex=0.8, pt.cex=0.5)
-plot(Global_reactive_power~DateTime, data = subsetted, type="l", xlab="datetime",
-     ylab="Global reactive power")
+plot(Global_reactive_power~DateTime, data = subsetted, type="l", xlab="datetime")
 dev.off()
